@@ -14,5 +14,8 @@
       <p><strong>Website:</strong> {{ user.website }}</p>
       <p><strong>Company:</strong> {{ user.company.name }}, {{ user.company.catchPhrase }}, {{ user.company.bs }}</p>
     </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="viewUserPosts()">View Posts</button>
+    </mat-card-actions>
   </mat-card>
 </ng-container>
