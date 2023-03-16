@@ -1,14 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { UserDetailsRoutingModule } from './user-details-routing.module';
+import {UserDetailsRoutingModule} from './user-details-routing.module';
+import {UserDetailsComponent} from "./user-details.component";
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
-  declarations: [],
+  declarations: [UserDetailsComponent],
   imports: [
     CommonModule,
-    UserDetailsRoutingModule
+    UserDetailsRoutingModule,
+    MatCardModule
   ]
 })
-export class UserDetailsModule { }
+export class UserDetailsModule {
+}
