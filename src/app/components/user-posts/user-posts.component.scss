@@ -1,23 +1,58 @@
-.card-actions {
+.container {
   display: flex;
-  justify-content: flex-end;
-  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.post-card {
-  margin-bottom: 1rem;
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.post-card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #F8FAFC;
+  max-width: 450px;
 }
 
 .post-card:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
+mat-card-header {
+  flex: 0 0 auto;
+}
+
+mat-card-content {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 mat-card {
-  width: 80%;
   margin: 0 auto;
+  width: 100%;
+  background-color: #F8FAFC;
+}
+
+.back-button {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  margin-left: 3rem;
 }
 
 mat-card-actions, .back-button {
@@ -39,6 +74,8 @@ mat-card-actions button, .back-button button {
   transition: background-color 0.3s ease;
 }
 
-mat-card-actions button:hover, .back-button button:hover {
-  background-color: #0069d9;
+@media screen and (max-width: 768px) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
