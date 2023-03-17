@@ -1,8 +1,8 @@
-<div class="back-button">
-  <button mat-button [routerLink]="'../'">back</button>
-</div>
 <ng-container *ngIf="user$ | async as user">
   <mat-card>
+    <div class="back-button">
+      <button mat-button [routerLink]="'../'">back</button>
+    </div>
     <mat-card-header>
       <mat-card-title>User Details</mat-card-title>
     </mat-card-header>

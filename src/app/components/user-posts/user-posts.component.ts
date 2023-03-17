@@ -25,5 +25,20 @@ export class UserPostsComponent implements OnInit {
     });
   }
 
-
+  getPostHeight(body: string): string {
+    const el = document.createElement('div');
+    el.innerHTML = body;
+    const height = el.scrollHeight;
+    if (height <= 100) {
+      return "span 2";
+    } else if (height <= 200) {
+      return "span 3";
+    } else if (height <= 300) {
+      return "span 4";
+    } else if (height <= 400) {
+      return "span 5";
+    } else {
+      return "span 6";
+    }
+  }
 }
