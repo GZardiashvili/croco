@@ -5,6 +5,7 @@ import {UserDetailsRoutingModule} from './user-details-routing.module';
 import {UserDetailsComponent} from "./user-details.component";
 import {MatCardModule} from "@angular/material/card";
 import {ActivatedRoute, Router} from "@angular/router";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import {ActivatedRoute, Router} from "@angular/router";
   imports: [
     CommonModule,
     UserDetailsRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class UserDetailsModule {

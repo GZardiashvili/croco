@@ -12,6 +12,7 @@ import {ActivatedRoute} from "@angular/router";
 export class UserPostsComponent implements OnInit {
   posts$!: Observable<Post[]>;
 
+
   constructor(private route: ActivatedRoute, private userPostsService: UserPostsService) {
   }
 

@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { UserListRoutingModule } from './user-list-routing.module';
+import {UserListRoutingModule} from './user-list-routing.module';
 import {UserListComponent} from "./user-list.component";
 import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -13,8 +14,10 @@ import {MatCardModule} from "@angular/material/card";
   imports: [
     CommonModule,
     UserListRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
 
 })
-export class UserListModule { }
+export class UserListModule {
+}

@@ -1,0 +1,44 @@
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.post-card {
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+mat-card {
+  width: 80%;
+  margin: 0 auto;
+}
+
+mat-card-actions, .back-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+}
+
+mat-card-actions button, .back-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+mat-card-actions button:hover, .back-button button:hover {
+  background-color: #0069d9;
+}

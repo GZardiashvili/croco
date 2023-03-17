@@ -1,0 +1,33 @@
+mat-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px auto;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+  width: 80%;
+}
+
+mat-card:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+mat-card-title.clickable {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+mat-card-subtitle {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+mat-card-title:hover, mat-card-subtitle:hover {
+  text-decoration: underline;
+}
